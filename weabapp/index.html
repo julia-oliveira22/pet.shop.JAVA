@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>PetShop Java</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Sistema de Cadastro de Pets (Java)</h1>
+
+<!-- CADASTRO -->
+<div class="card">
+    <h2>Cadastrar Pet</h2>
+    <form method="POST" action="cadastrar">
+        <input type="text" name="nome_pet" placeholder="Nome do Pet" required>
+        <input type="text" name="nome_dono" placeholder="Nome do Dono" required>
+        <input type="text" name="telefone" placeholder="Telefone" required>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <label>Serviços:</label><br>
+        <input type="checkbox" name="servicos" value="Banho"> Banho<br>
+        <input type="checkbox" name="servicos" value="Tosa"> Tosa<br>
+        <input type="checkbox" name="servicos" value="Vacinação"> Vacinação<br>
+        <input type="checkbox" name="servicos" value="Consulta"> Consulta<br>
+        <input type="checkbox" name="servicos" value="Desparasitação"> Desparasitação<br>
+        <input type="checkbox" name="servicos" value="Corte de Unhas"> Corte de Unhas<br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</div>
+
+<!-- BUSCA -->
+<div class="card">
+    <h2>Buscar Pets</h2>
+    <form method="POST" action="buscar">
+        <input type="text" name="busca_dono" placeholder="Nome do Dono">
+        <input type="text" name="busca_pet" placeholder="Nome do Pet">
+        <select name="busca_servico">
+            <option value="">Serviço</option>
+            <option value="Banho">Banho</option>
+            <option value="Tosa">Tosa</option>
+            <option value="Vacinação">Vacinação</option>
+            <option value="Consulta">Consulta</option>
+            <option value="Desparasitação">Desparasitação</option>
+            <option value="Corte de Unhas">Corte de Unhas</option>
+        </select>
+        <button type="submit">Buscar</button>
+    </form>
+</div>
+
+</body>
+</html>
